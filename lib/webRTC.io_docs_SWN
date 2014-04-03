@@ -1,0 +1,26 @@
+1．	Export interface: name.listen(server) 
+  a)	Arguments：server or port, at last one of them.
+  b)	Return: a WebSocket server.: manager
+  c)	Object : manager
+    i.	Attributes:
+      1.	Rtc
+        a)	Attributes :
+          i.	_events[] : array of events
+          ii.	Sockets[] : array of user
+            1.	Events
+               a)	Message : 
+               b)	Close
+               c)	
+          iii.	Rooms[]
+        b)	Method :
+          i.	rtc.on(eventname,callback) : create a eventlistener for event.
+          ii.	rtc.fire(eventname) : fire the event whose is eventname here.
+          iii.	rtc.getSocket : get socket by ID
+        c)	Events 
+          i.	join_rome:
+          ii.	send_ice_candidate
+          iii.	send_offer
+          iv.	send_offer
+    ii.	Events :  
+      1.	Connection
+        a)	Create a random ID for the new socket and add it to the array rtc.sockets 
